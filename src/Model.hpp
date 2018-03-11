@@ -17,6 +17,7 @@ public:
     static int num_of_people;
 
     static void update_values(int nearest_x, int nearest_depth, int num_of_people);
+    static void update_values(int nearest_x, int nearest_depth);
 };
 
 #endif /* Model_hpp */

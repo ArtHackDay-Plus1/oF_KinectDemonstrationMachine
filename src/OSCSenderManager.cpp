@@ -17,7 +17,7 @@ void OSCSenderManager::setup(){
 //--------------------------------------------------------------
 void OSCSenderManager::update(){
 
-    if(ofGetElapsedTimeMillis()%1000 < 50){
+    if(ofGetElapsedTimeMillis()%1000 < 200){
 
         //osc message instance
         ofxOscMessage m;
@@ -32,6 +32,10 @@ void OSCSenderManager::update(){
 
         //send message
         sender.sendMessage(m);
+
+        ofLog() << "nearest_x : " <<"[" <<Model::nearest_x << "]";
+        ofLog() << "nearest_depth : " <<"[" <<Model::nearest_depth << "]";
+        ofLog() << "num_of_people : " <<"[" <<Model::num_of_people << "]";
     }
 }
 
