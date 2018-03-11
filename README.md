@@ -2,6 +2,8 @@
 
 # oF_KinectDemonstrationMachine 
 
+[!art](https://github.com/ArtHackDay-Plus1/oF_KinectDemonstrationMachine/blob/master/art/art.png)
+
 ```cpp
 //--------------------------------------------------------------
 void OSCSenderManager::update(){
