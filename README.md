@@ -38,7 +38,7 @@ void OSCSenderManager::update(){
 ```cpp
 float nearest_x = ofMap(y, frame_edge_y_up , frame_edge_y_down ,MacroManager::frame_width ,0);
 float nearest_depth = ofMap(x-frame_edge_x_down, 0, MacroManager::scaling_distance_kinect_to_frame,0,MacroManager::distance_kinect_to_frame);
-    Model::update_values(nearest_x,  nearest_depth);
+Model::update_values(nearest_x,  nearest_depth);
 ```
 
 
